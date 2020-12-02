@@ -4,7 +4,7 @@
 
 Beacon is a CRM database. One of the most important things our customers want to do is import their existing data! So we built a feature to let customers import CSV files into the database.
 
-Your task (if you choose to accept it) is to start doing the same.
+Your task (if you choose to accept it) is to start building one yourself.
 
 
 ## Installation
@@ -46,13 +46,13 @@ We'd like you to map this list of rows into an array of objects **in our standar
 }
 ```
 
-__Tip:__ the [`src/mapRow/index.js`](./src/mapRow/index.js) file is invoked for each row. 
+__Tip:__ the [`src/mapRow/index.js`](./src/mapRow/index.js) file is invoked for each row. This is where you need to write your code.
 
 
 ## What we'd like to see
 
 1. **Good code structure** - split out the mapping logic in `src/mapRow/index.js` into multiple files
-2. **Unit tests** - your mapping files definitely will need unit tests. We've pre-installed mocha for you, but you can use a different unit testing library if you prefer. Run `npm run test` in the terminal.
+2. **Unit tests** - each of your mapping files will need unit tests. We've pre-installed [mocha](https://mochajs.org/) for you, but you can use a different unit testing library if you prefer. Run `npm run test` in the terminal.
 3. **Data validation** - CSV files are often messy and contain incorrect data. We __don't__ want to include invalid data in our mapped "row" objects. (They would fail to save into the database) See [expected data formats](#expected-data-formats) for more information.
 4. **Data tidy up** - some of the data is valid, but needs a little tidying up. If you could write code to tidy things up, that would be fabulous.
     * Email addresses always be lowercase
@@ -64,7 +64,7 @@ Importantly, here are the things that you __don't__ need to do:
 
 * We don't want you to tidy up the CSV in Excel. You need to write code to tidy it up (where possible) automatically.
 * Parse the CSV file. We've already written code to do that for you!
-* Edit any files outside of `src/mapRow` or `test/mapRow`.
+* Edit any files outside of [`src/mapRow`](./src/mapRow) or [`test/mapRow`](./test/mapRow).
 
 
 ## Expected data formats
