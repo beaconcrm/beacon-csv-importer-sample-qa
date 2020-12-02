@@ -22,7 +22,7 @@ The `input.csv` is a CSV file with some fake customer data in it. It includes th
 * country
 * postcode
 
-We want to map this list of rows into an array of objects **in our standard format** (more on expected formats [below](#expecteddataformats)). A snippet 
+We want to map this list of rows into an array of objects **in our standard format** (more on expected formats [below](#expected-data-formats)). A snippet 
 
 ```js
 [
@@ -51,7 +51,7 @@ The `src/mapRow/index.js` file is invoked for each row. We'd like you to
 
 1. **Good code structure** - split out the mapping logic in `src/mapRow/index.js` into multiple files
 2. **Unit tests** - your mapping files definitely will need unit tests
-3. **Data validation** - CSV files are often messy and contain incorrect data. We __don't__ want to include invalid data in our mapped "row" objects. (They would fail to save into the database) See [expected data formats](#expecteddataformats) for more information.
+3. **Data validation** - CSV files are often messy and contain incorrect data. We __don't__ want to include invalid data in our mapped "row" objects. (They would fail to save into the database) See [expected data formats](#expected-data-formats) for more information.
 4. **Data tidy up** - some of the data is valid, but needs a little tidying up. If you could write code to tidy things up, that would be fabulous.
     * Email addresses always be lowercase
     * Country codes should be uppercase (e.g. `GB`)
