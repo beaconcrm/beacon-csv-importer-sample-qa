@@ -27,7 +27,7 @@ The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it.
 * country
 * postcode
 
-We want to map this list of rows into an array of objects **in our standard format** (more on [expected formats](#expected-data-formats) below). A snippet 
+We'd like you to map this list of rows into an array of objects **in our standard format** (more on [expected formats](#expected-data-formats) below). A snippet 
 
 ```js
 [
@@ -66,7 +66,8 @@ The `src/mapRow/index.js` file is invoked for each row. We'd like you to
 Importantly, here are the things that you __don't__ need to do:
 
 * We don't want you to tidy up the CSV in Excel. You need to write code to tidy it up (where possible) automatically.
-
+* Parse the CSV file. We've already written code to do that for you!
+* Edit any files outside of `src/mapRow` or `test/mapRow`.
 
 
 ## Expected data formats
