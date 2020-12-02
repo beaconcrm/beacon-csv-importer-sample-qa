@@ -61,6 +61,7 @@ The `src/mapRow/index.js` file is invoked for each row. We'd like you to
     * Email addresses always be lowercase
     * Country codes should be uppercase (e.g. `GB`)
     * Trimming whitespace is for winners (see [`_.trim`](https://lodash.com/docs/4.17.15#trim))
+    * Blank strings should be treated as `null`
 
 Importantly, here are the things that you __don't__ need to do:
 
@@ -79,7 +80,7 @@ People's names should be split up into a single object, with the following keys:
 
 If no first/last name is set, then these keys should be `null`. The object **should** still be specified.
 
-**Only** string values are supported.
+**Only** string values for these keys are supported.
 
 ```
 {
@@ -101,6 +102,8 @@ __Tip:__ you can use [isemail](https://www.npmjs.com/package/isemail), [validato
 ```js
 ['chris@beaconcrm.org', 'chris@beaconproducts.co.uk']
 ```
+
+If there are no valid email addresses, the `emails` key should be a blank array (`[]`).
 
 ### Address
 
