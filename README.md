@@ -7,6 +7,11 @@ Beacon is a CRM database. One of the most important things our customers want to
 Your task (if you choose to accept it) is to start doing the same.
 
 
+## Installation
+
+1. Clone this repo
+2. Run `yarn install` (or `npm install`)
+
 ## The task
 
 The `input.csv` is a CSV file with some fake customer data in it. It includes the following columns:
@@ -50,7 +55,7 @@ The `src/mapRow/index.js` file is invoked for each row. We'd like you to
 ## What we'd like to see
 
 1. **Good code structure** - split out the mapping logic in `src/mapRow/index.js` into multiple files
-2. **Unit tests** - your mapping files definitely will need unit tests
+2. **Unit tests** - your mapping files definitely will need unit tests. We've pre-installed mocha for you, but you can use a different unit testing library if you prefer. Run `npm run test` in the terminal.
 3. **Data validation** - CSV files are often messy and contain incorrect data. We __don't__ want to include invalid data in our mapped "row" objects. (They would fail to save into the database) See [expected data formats](#expected-data-formats) for more information.
 4. **Data tidy up** - some of the data is valid, but needs a little tidying up. If you could write code to tidy things up, that would be fabulous.
     * Email addresses always be lowercase
