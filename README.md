@@ -27,29 +27,26 @@ The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it.
 * country
 * postcode
 
-We'd like you to map this list of rows into an array of objects **in our standard format** (more on [expected formats](#expected-data-formats) below). A snippet 
+We'd like you to map this list of rows into an array of objects **in our standard format** (more on [expected formats](#expected-data-formats) below). Each row should be mapped to the below format:
 
 ```js
-[
-  {
-    name: {
-      first: 'Sherlock',
-      last: 'Holmes',
-    },
-    emails: ['sherlock@holmes.co.uk'],
-    address: {
-      address_line_one: '221B',
-      address_line_two: 'Baker Street',
-      city: 'London',
-      postal_code: 'NW1 6XE',
-      country_code: 'GB',
-    },
+{
+  name: {
+    first: 'Sherlock',
+    last: 'Holmes',
   },
-  ... more rows
-]
+  emails: ['sherlock@holmes.co.uk'],
+  address: {
+    address_line_one: '221B',
+    address_line_two: 'Baker Street',
+    city: 'London',
+    postal_code: 'NW1 6XE',
+    country_code: 'GB',
+  },
+}
 ```
 
-The `src/mapRow/index.js` file is invoked for each row. We'd like you to 
+__Tip:__ the [`src/mapRow/index.js`](./src/mapRow/index.js) file is invoked for each row. 
 
 
 ## What we'd like to see
