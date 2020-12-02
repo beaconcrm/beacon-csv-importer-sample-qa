@@ -2,9 +2,9 @@
 
 ## Background
 
-Beacon is a CRM database. One of the most important things our customers want to do is import their existing data! As such, we've built a feature to let customers import CSV files into the database.
+Beacon is a CRM database. One of the most important things our customers want to do is import their existing data! So we built a feature to let customers import CSV files into the database.
 
-Your task (if you choose to accept it) is to do the same.
+Your task (if you choose to accept it) is to start doing the same.
 
 
 ## The task
@@ -21,6 +21,43 @@ The `input.csv` is a CSV file with some fake customer data in it. It includes th
 * city 
 * country
 * postcode
+
+We want to map this list of rows into an array of objects **in our standard format** (more on expected formats [below](#expecteddataformats)). A snippet 
+
+```js
+[
+  {
+    name: {
+      first: 'Sherlock',
+      last: 'Holmes',
+    },
+    emails: ['sherlock@holmes.co.uk'],
+    address: {
+      address_line_one: '221B',
+      address_line_two: 'Baker Street',
+      city: 'London',
+      postal_code: 'NW1 6XE',
+      country_code: 'GB',
+    },
+  },
+  ... more rows
+]
+```
+
+The `src/mapRow/index.js` file is invoked for each row. We'd like you to 
+
+
+## What we'd like to see
+
+1. **Good code structure** - split out the mapping logic in `src/mapRow/index.js` into multiple files
+2. **Unit tests** - your mapping files definitely will need unit tests
+3. **Data validation** - CSV files are often messy and contain incorrect data. We __don't__ want to include invalid data in our mapped "row" objects. (They would fail to save into the database) See [expected data formats](#expecteddataformats) for more information.
+4. **Data tidy up** - some of the data is valid, but needs a little tidying up. If you could write code to tidy things up, that would be fabulous.
+    * Email addresses always be lowercase
+    * Country codes should be uppercase (e.g. `GB`)
+    * Trimming whitespace is for winners (see [`_.trim`](https://lodash.com/docs/4.17.15#trim))
+
+
 
 
 
@@ -52,7 +89,7 @@ Email addresses should be returned as an array of email addresses. Each email ad
 * All lowercase
 * A valid email address
 
-Tip: you can use [isemail](https://www.npmjs.com/package/isemail), [validatorjs](https://www.npmjs.com/package/validatorjs), or any other validation library to check for valid email addresses.
+__Tip:__ you can use [isemail](https://www.npmjs.com/package/isemail), [validator.js](https://www.npmjs.com/package/validator), or any other validation library to check for valid email addresses.
 
 ```js
 ['chris@beaconcrm.org', 'chris@beaconproducts.co.uk']
@@ -67,3 +104,5 @@ The address should be returned as an object, with the following keys:
 * `city`
 * `postal_code`
 * `country_code`
+
+__Tip:__ the `country_code` should only be set if it is valid. (The `isISO31661Alpha2` function in [validator.js](https://www.npmjs.com/package/validator) can be used to check this)
