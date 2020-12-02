@@ -27,7 +27,7 @@ The `input.csv` is a CSV file with some fake customer data in it. It includes th
 * country
 * postcode
 
-We want to map this list of rows into an array of objects **in our standard format** (more on expected formats [below](#expected-data-formats)). A snippet 
+We want to map this list of rows into an array of objects **in our standard format** (more on [expected formats](#expected-data-formats) below). A snippet 
 
 ```js
 [
@@ -62,7 +62,9 @@ The `src/mapRow/index.js` file is invoked for each row. We'd like you to
     * Country codes should be uppercase (e.g. `GB`)
     * Trimming whitespace is for winners (see [`_.trim`](https://lodash.com/docs/4.17.15#trim))
 
+Importantly, here are the things that you __don't__ need to do:
 
+* We don't want you to tidy up the CSV in Excel. You need to write code to tidy it up (where possible) automatically.
 
 
 
