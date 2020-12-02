@@ -14,7 +14,7 @@ Your task (if you choose to accept it) is to start doing the same.
 
 ## The task
 
-The `input.csv` is a CSV file with some fake customer data in it. It includes the following columns:
+The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it. It includes the following columns:
 
 * first name
 * last name
