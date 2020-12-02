@@ -1,0 +1,21 @@
+{
+  "name": "beacon-csv-importer-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/beaconcrm/beacon-csv-importer-sample.git",
+  "author": "Chris Houghton <chris@beaconcrm.org>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node start.js",
+    "test": "mocha --recursive"
+  },
+  "dependencies": {
+    "fast-csv": "^4.3.5",
+    "lodash": "^4.17.20",
+    "mocha": "^8.2.1"
+  },
+  "devDependencies": {
+    "@beacon/eslint-config-node": "^1.2.3",
+    "eslint": "^7.14.0"
+  }
+}
