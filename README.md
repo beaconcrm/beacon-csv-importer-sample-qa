@@ -90,7 +90,7 @@ __Tip:__ the [`src/mapRow/index.js`](./src/mapRow/index.js) file is invoked for 
 
 ## What we'd like to see
 
-1. **Good code structure** - split out the mapping logic in `src/mapRow/index.js` into multiple files
+1. **Good code structure** - split out the mapping logic in [`src/mapRow/index.js`](./src/mapRow/index.js) into multiple files
 2. **Unit tests** - each of your mapping files will need unit tests. We've pre-installed [mocha](https://mochajs.org/) for you, but you can use a different unit testing library if you prefer. Run `npm run test` in the terminal.
 3. **Data validation** - CSV files are often messy and contain incorrect data. We __don't__ want to include invalid data in our mapped "row" objects. (They would fail to save into the database) See [expected data formats](#expected-data-formats) for more information.
 4. **Data tidy up** - some of the data is valid, but needs a little tidying up. If you could write code to tidy things up, that would be fabulous.
