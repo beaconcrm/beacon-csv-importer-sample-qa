@@ -1,2 +1,10 @@
-first name,last name,email address,phone number,address line one,address line two,city,postcode
-Chris,Houghton,Chris@Beaconcrm.org,+44 203 8614 519,154-158 Shoreditch High St,,London,E1 6HU
+first name,last name,email,email 2,email 3,address line one,address line two,city,country,postcode
+Chris,Houghton,Chris@Beaconcrm.org,chris@beaconproducts.co.uk,,154-158 Shoreditch High St,,London,GB,E1 6HU
+   Frodo   ,Baggins,frodo@baggins.com,bilbo@ baggins.com,,  Bag End   ,,The Shire,Middle Earth,
+Donald,Trump,  MAKE AMERICA GREAT AGAIN    ,   I WON THE ELECTION    ,,     1600 Pennsylvania Avenue NW   ,,Washington,us,20500
+Jenny,,,jenny@gmail.com,,,,,,
+Ben,Cook,ben@beaconcrm.org,,,1 Bath Place,Rivington St,London,,EC2A 3DR
+Smaug,The Terrible,precious@lotr.com,treasure@gold.com,,The Lonely Mountain,,,ME,
+Gandalf,The Grey,gandalf@...,,,,,,,
+Gollum,,gollum@lotr.com,WHEREISTHEPRECIOUS@lotr.com,myprecious,,,,middle earth,
+     Boris   ,Johnson,boris@number10.gov.uk,contact@number10.gov.uk,,10 Downing St,Westminster,London,London    , sw1A 2AA

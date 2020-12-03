@@ -14,6 +14,6 @@ module.exports = async () => {
     mapRow(row)
   ));
 
-  console.log(mappedRows);
+  console.log('Mapped rows:', mappedRows);
 
 };

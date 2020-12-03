@@ -10,6 +10,12 @@
 
 module.exports = (row) => {
 
-  return row;
+  const mappedRow = {};
+
+  // console.log(row);
+
+  // DO YOUR MAPPING HERE TO ADD TO `mappedRow`!
+
+  return mappedRow;
 
 };
