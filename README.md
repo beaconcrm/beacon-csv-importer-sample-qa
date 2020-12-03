@@ -12,6 +12,20 @@ Your task (if you choose to accept it) is to start building one yourself.
 1. Clone this repo
 2. Run `yarn install` (or `npm install`)
 
+## Usage
+
+To run the mapper:
+
+```
+npm run start
+```
+
+To run unit tests:
+
+```
+npm run test
+```
+
 ## The task
 
 The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it. It includes the following columns:
@@ -27,7 +41,24 @@ The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it.
 * country
 * postcode
 
-We'd like you to map this list of rows into an array of objects **in our standard format** (more on [expected formats](#expected-data-formats) below). Each row should be mapped to the below format:
+We have already written the code to parse and read all rows in the CSV into an array of objects, where each row is an object in the array, and the column headings are the keys within the object. For example:
+
+```
+[
+  {
+    'first name': 'Chris',
+    'last name': 'Houghton',
+    'email address': 'Chris@Beaconcrm.org',
+    'phone number': '+44 203 8614 519',
+    'address line one': '154-158 Shoreditch High St',
+    'address line two': '',
+    city: 'London',
+    postcode: 'E1 6HU'
+  }
+]
+```
+
+We'd like you to "map" each row **into our standard format** (more on [expected formats](#expected-data-formats) below). Each row should be mapped to the below format:
 
 ```js
 {
