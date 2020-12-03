@@ -41,19 +41,27 @@ The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it.
 * country
 * postcode
 
-We have already written the code to parse and read all rows in the CSV into an array of objects, where each row is an object in the array, and the column headings are the keys within the object. For example:
+We have already written the code to parse and read all rows in the CSV into an array of objects:
+
+* Each row is an object in the array
+* The column headings are the keys within each object.
+
+For example:
 
 ```
 [
   {
     'first name': 'Chris',
     'last name': 'Houghton',
-    'email address': 'Chris@Beaconcrm.org',
+    'email': 'Chris@Beaconcrm.org',
+    'email 2': '',
+    'email 3': '',
     'phone number': '+44 203 8614 519',
     'address line one': '154-158 Shoreditch High St',
     'address line two': '',
     city: 'London',
-    postcode: 'E1 6HU'
+    country: 'GB',
+    postcode: 'E1 6HU',
   }
 ]
 ```
