@@ -128,7 +128,7 @@ If no first/last name is set, then these keys should be `null`. The object **sho
 
 ### Email address
 
-Email addresses should be returned as an array of email addresses. Each email address should be:
+Email addresses should be returned as an array of email address strings. Each email address should be:
 
 * A string
 * All lowercase
