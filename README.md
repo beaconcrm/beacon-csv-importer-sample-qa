@@ -73,7 +73,7 @@ For example the address mapper extracts and maps the address section of a row:
 
 Write some tests to ensure this feature is shipped with confidence!
 
-To get you started there are some existing test files in the [`/test`](./test) folder but these could do with some improvements and need to be finished.
+To get you started there are some existing test files in the [`/test`](./test) folder. Finish and complete these test files.
 
 The functions these files are testing are:
 * The row mapper [`src/mapRow/index.ts`](./src/mapRow/index.ts)
