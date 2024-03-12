@@ -37,7 +37,7 @@ The [`input.csv`](./input.csv) is a CSV file with some fake customer data in it.
 
 We have already written the code to parse and read all rows in the CSV and map them into the required format. There are four files that are responsible for this:
 
-* The [`src/mapRow/index.js`](./src/mapRow/index.js) file maps an entire row
+* The [`src/mapRow/index.js`](./src/mapRow/index.ts) file maps an entire row
 * There are three mapper files found in the [`src/mapRow/mappers`](./src/mapRow/mappers) folder that are responsible for mapping each part of a row.
 
 For example the address mapper extracts and maps the address section of a row:
@@ -77,7 +77,7 @@ To get you started there are some existing test files in the [`/test`](./test) f
 
 The functions these files are testing are:
 * The row mapper [`src/mapRow`](./src/mapRow/index.ts)
-* The name mapper [`src/mapRow/mappers/name`](./src/mapRow/mappers/name)
-* The email mapper [`src/mapRow/mappers/email`](./src/mapRow/mappers/email)
-* The address mapper [`src/mapRow/mappers/address`](./src/mapRow/mappers/address)
+* The name mapper [`src/mapRow/mappers/name`](./src/mapRow/mappers/name.ts)
+* The email mapper [`src/mapRow/mappers/email`](./src/mapRow/mappers/email.ts)
+* The address mapper [`src/mapRow/mappers/address`](./src/mapRow/mappers/address.ts)
 
