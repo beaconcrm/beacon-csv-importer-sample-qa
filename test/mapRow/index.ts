@@ -5,6 +5,6 @@ import assert from 'assert';
 describe('#rowMapper', () => {
 
   it('should map', () => {
-    assert.equal(true, true);
+    assert.deepStrictEqual(true, true);
   });
 });
