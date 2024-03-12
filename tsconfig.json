@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    // Lambda supports ES Modules however it's not quite there yet.
+    // ES Modules would be something to evalute in the future
+    // as they enable things like top level await.
+    // https://nodejs.org/api/esm.html
+    // https://aws.amazon.com/about-aws/whats-new/2022/01/aws-lambda-es-modules-top-level-await-node-js-14/
+    // https://aws.amazon.com/blogs/compute/using-node-js-es-modules-and-top-level-await-in-aws-lambda/
+    "module": "commonjs",
+    "esModuleInterop": true, // Allows you to write `import x from 'x'` instead of `import * as x from 'x'`
+    "removeComments": true, // Remove comments when transpiling
+    "experimentalDecorators": true, // Allow decorators, (@Injectable())
+    "allowSyntheticDefaultImports": true, // Saves having to write `import * as x from 'x'` when no default export is set.
+    "target": "es2017", // Target ES2017
+    "outDir": "./dist", // Output directory
+    "resolveJsonModule": true,
+  }
+}

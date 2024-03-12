@@ -1,1 +1,0 @@
-Put your mapper unit tests in this directory.
