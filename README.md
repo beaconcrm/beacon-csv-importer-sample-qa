@@ -76,8 +76,8 @@ Write some tests to ensure this feature is shipped with confidence!
 To get you started there are some existing test files in the [`/test`](./test) folder but these could do with some improvements and need to be finished.
 
 The functions these files are testing are:
-* The row mapper [`src/mapRow`](./src/mapRow/index.ts)
-* The name mapper [`src/mapRow/mappers/name`](./src/mapRow/mappers/name.ts)
-* The email mapper [`src/mapRow/mappers/email`](./src/mapRow/mappers/email.ts)
-* The address mapper [`src/mapRow/mappers/address`](./src/mapRow/mappers/address.ts)
+* The row mapper [`src/mapRow/index.ts`](./src/mapRow/index.ts)
+* The name mapper [`src/mapRow/mappers/name.ts`](./src/mapRow/mappers/name.ts)
+* The email mapper [`src/mapRow/mappers/email.ts`](./src/mapRow/mappers/email.ts)
+* The address mapper [`src/mapRow/mappers/address.ts`](./src/mapRow/mappers/address.ts)
 
