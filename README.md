@@ -81,3 +81,10 @@ The functions these files are testing are:
 * The email mapper [`src/mapRow/mappers/email.ts`](./src/mapRow/mappers/email.ts)
 * The address mapper [`src/mapRow/mappers/address.ts`](./src/mapRow/mappers/address.ts)
 
+Remember we are pulling in data from a spreadsheet that could contain anything. Try to think about the different formats that data could take and write tests to cover this.
+
+## What you don't need to do
+
+The app should already be working! If it's not let us know as this is not intended to be part of the test. You shouldn't have to change any of the code in the [`src/`](./src) folder.
+
+Stick to adding unit tests in the test files that already exist. We can use the discussion time afterwards as an opportunity for discussing how you might extend this or make things more reusable.
