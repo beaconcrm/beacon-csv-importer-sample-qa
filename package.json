@@ -15,7 +15,6 @@
     "validator": "^13.11.0"
   },
   "devDependencies": {
-    "@beacon/eslint-config-typescript": "^1.0.2",
     "@types/lodash": "^4.17.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.26",
