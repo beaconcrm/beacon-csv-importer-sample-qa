@@ -26,6 +26,9 @@
   "overrides": {
     "mocha": {
       "serialize-javascript": "^7.1.4"
+    },
+    "nodemon": {
+      "minimatch": "^11.0.1"
     }
   }
 }
